@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- 
+        HO VA TEN: Huynh Van Minh
+        MSSV: 20065891
+     -->
+    <script>
+      // Test Data 1 ------------------------------
+      var massMar = 78;
+      var heightMar = 1.69;
+      var bmiMar = massMar / heightMar ** 2;
+      var massJohn = 92;
+      var heightJohn = 1.95;
+      var bmiJohn = massJohn / heightJohn ** 2;
+      console.log(bmiMar);
+      console.log(bmiJohn);
+
+      function markHigherBMI() {
+        if (bmiMar > bmiJohn) {
+          console.log(
+            "Mark's BMI (" +
+              bmiMar.toFixed(2) +
+              ") is higher than John's (" +
+              bmiJohn.toFixed(2) +
+              ")!"
+          );
+        } else
+          console.log(
+            "John's BMI (" +
+              bmiJohn.toFixed(2) +
+              ") is higher than Mark's (" +
+              bmiMar.toFixed(2) +
+              ")!"
+          );
+      }
+      markHigherBMI();
+
+      // Test Data 2 ------------------------------
+      var massMar = 95;
+      var heightMar = 1.88;
+      var bmiMar = massMar / heightMar ** 2;
+      var massJohn = 85;
+      var heightJohn = 1.76;
+      var bmiJohn = massJohn / heightJohn ** 2;
+      console.log(bmiMar);
+      console.log(bmiJohn);
+
+      function markHigherBMI() {
+        if (bmiMar > bmiJohn) {
+          console.log(
+            "Mark's BMI (" +
+              bmiMar.toFixed(2) +
+              ") is higher than John's (" +
+              bmiJohn.toFixed(2) +
+              ")!"
+          );
+        } else
+          console.log(
+            "John's BMI (" +
+              bmiJohn.toFixed(2) +
+              ") is higher than Mark's (" +
+              bmiMar.toFixed(2) +
+              ")!"
+          );
+      }
+      markHigherBMI();
+    </script>
+  </body>
+</html>

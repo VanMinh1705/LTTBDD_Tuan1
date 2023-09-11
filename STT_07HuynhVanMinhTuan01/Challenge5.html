@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- 
+        HO VA TEN: Huynh Van Minh
+        MSSV: 20065891
+     -->
+    <script>
+      function calcAverage(score1, score2, score3) {
+        return (score1 + score2 + score3) / 3;
+      }
+
+      console.log("Data 1");
+      const dolphinAvg = calcAverage(44, 23, 71);
+      const koalasAvg = calcAverage(65, 54, 49);
+      console.log("Average Dolphins: " + dolphinAvg.toFixed(2) + "");
+      console.log("Average Koalas:" + koalasAvg.toFixed(2) + "");
+
+      function checkWinner(dolphinAvg, koalasAvg) {
+        if (dolphinAvg >= 2 * koalasAvg) {
+          console.log(`Dolphins win (${dolphinAvg} vs. ${koalasAvg})`);
+        } else if (koalasAvg >= 2 * dolphinAvg) {
+          console.log(`Koalas win (${koalasAvg} vs. ${dolphinAvg})`);
+        } else {
+          console.log("No team win");
+        }
+      }
+      checkWinner(dolphinAvg, koalasAvg);
+
+      console.log("Data 2");
+      dolphinAvg2 = calcAverage(85, 54, 41);
+      koalasAvg2 = calcAverage(23, 34, 27);
+      console.log("Average Dolphins: " + dolphinAvg2.toFixed(2) + "");
+      console.log("Average Koalas:" + koalasAvg2.toFixed(2) + "");
+      checkWinner(dolphinAvg2, koalasAvg2);
+    </script>
+  </body>
+</html>
